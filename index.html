@@ -25,16 +25,42 @@
                 <h2>Experience</h2>
                 <div class="project-item">
                     <h3>Plivo, Site Reliability Engineer</h3>
-                    <p>Engineered a scalable alerting framework with Slack integration that escalated issues proactively, decreasing detection time for major incidents by 50%.
-                    Wrote AWS Lambda functions to cut alerts by 37% with fewer false positives and automated resolution.
-                    Composed Grafana charts providing real-time visibility into system metrics such as CPU usage, memory utilization, network throughput, and application response times.
-                    </p>
+                    <ul>
+                     <li>Engineered a scalable alerting framework with Slack integration that escalated issues proactively, 
+decreasing detection time for major incidents by 50%.</li> 
+                    <li>Wrote AWS Lambda functions to cut alerts by 37% with fewer false positives and automated resolution.
+                    </li>
+                    <li>Composed Grafana charts providing real-time visibility into system metrics such as CPU usage, memory 
+                        utilization, network throughput, and application response times.                        
+                    </li>
+                    <li>
+                        Used Chaos Mesh in Kubernetes clusters to simulate failures, identify weaknesses, and enhance system 
+reliability, reducing downtime for critical services.
+                    </li>
+                    <li>
+                        Dockerized multiple services running on EC2, streamlining their migration to an EKS cluster, improving 
+scalability, and simplifying management through Kubernetes orchestration.
+                    </li>
+                    <li>
+                        updated Terraform modules to accommodate infrastructure changes.
+                    </li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Wedmist, Cloud Engineer</h3>
+                    <ul>
+                   <li> Handled two AWS accounts, including the setup and configuration of EC2 instances, S3, RDS database, 
+                    VPCs, ELBs and ASGs.</li>
+                   <li>Managed roles and permissions of users with IAM and enforced MFA for security</li>
+                   <li>Wrote UNIX shell scripts to automate the jobs and scheduling cron jobs for job automation using crontab.</li>
+                    </ul>
                 </div>
                 <div class="project-item">
                     <h3>CSUDH, Research Assistant, Teaching Assistant</h3>
-                    <p>worked with Dr. Parveen Chhetri on an eco-commuting initiative aimed at projecting a 15% reduction in carbon emissions, analyzed data from 995 surveys, and prepared insightful visualizations using Matplotlib and pandas.
-                        Collaborated with Dr. Amlan Chatterjee to construct a set of 10 unique exam projects, enhancing the curriculum's rigor and attracting positive feedback from 95% of participating students in course evaluations
-                    </p>
+                    <ul>
+                   <li> worked with Dr. Parveen Chhetri on an eco-commuting initiative aimed at projecting a 15% reduction in carbon emissions, analyzed data from 995 surveys, and prepared insightful visualizations using Matplotlib and pandas. </li>
+                   <li>Collaborated with Dr. Amlan Chatterjee to construct a set of 10 unique exam projects, enhancing the curriculum's rigor and attracting positive feedback from 95% of participating students in course evaluations.</li>
+                    </ul>
                 </div>
                 
             </section>     
@@ -42,32 +68,51 @@
              <!-- Projects Section -->
              <section id="projects">
                 <h2>PROJECTS</h2>
-                <div class="project-item">
-                    <h3>Scalable Web Application Infrastructure Deployment on AWS</h3>
-                    <p>Designed and implemented an automated solution using Terraform to deploy a highly available web application infrastructure on AWS, featuring VPC, subnets, ASG, ALB, RDS, and EFS. The infrastructure spans multiple Availability Zones, ensuring fault tolerance, high availability, and scalability.</p>
-                    <a href="https://github.com/Kaphleamrit/scalableWebAppAWS" target="_blank">GitHub Repository</a>
-                </div>
-                <div class="project-item">
-                    <h3>Network Intrusion Detection System</h3>
-                    <p>This is a system to detect network anomalies using TensorFlow for deep learning, Scapy for real-time packet analysis, and Flask for a responsive web, featuring real-time anomaly detection.
-                        It has a sleek dashboard with Bootstrap to visualize alerts and network activities, providing a user-friendly interface for real-time network security monitoring
-                        </p>
-                    <a href="https://github.com/Kaphleamrit/nids" target="_blank">GitHub Repository</a>
-                </div>
-                <div class="project-item">
-                    <h3>Secure Data Encryption and Key Exchange System</h3>
-                    <p>This system encrypts data using AES (Cryptography) and securely exchanges keys with RSA (PyCryptodome) to ensure data confidentiality.	
-                        It implements key management and secure key exchange protocols (Diffie-Hellman, ECDH) with authentication to prevent man-in-the-middle attacks, utilizing SSL/TLS for secure communication.
-                        It has a web-based interface for key management created using Flask (python library).
-                        </p>
-                    <a href="https://github.com/Kaphleamrit/nids" target="_blank">GitHub Repository</a>
-                </div>
-                <div class="project-item">
-                    <h3>Java CI/CD & Code Quality with SonarQube and Maven</h3>
-                    <p>The MathUtils Java library contains mathematical functionalities, with JUnit tests ensuring accuracy in handling edge cases. Jenkins is configured for CI/CD, integrating SonarQube for static analysis and JaCoCo for code coverage, streamlined notifications, and artifact generation are implemented to enhance code quality.</p>
-                    <a href="https://github.com/Kaphleamrit/nids" target="_blank">GitHub Repository</a>
-                </div>
-            </section>      
+            
+                <!-- Project 1 -->
+                <a href="https://github.com/Kaphleamrit/securityTestingAsAService" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="project-item">
+                        <h3>Security testing as a Service</h3>
+                        <ul>
+                            <li>Developed a cloud-based security testing framework using Docker, Kubernetes, and Terraform to 
+                                automate infrastructure provisioning and static security scans with SonarQube running in EKS.</li>
+                            <li>Utilized AWS SQS for request queuing, allowing security scan requests to be processed one by one through 
+                                SonarQube, ensuring efficient handling of multiple tasks.</li>
+                            <li>Automated report delivery by sending security reports via email to requesters upon completion of 
+                                SonarQube scans, streamlining the entire process from request to result.</li>
+                        </ul>
+                    </div>
+                </a>
+            
+                <!-- Project 2 -->
+                <a href="https://github.com/Kaphleamrit/resumeCI-CD" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="project-item">
+                        <h3>Automated Web Application Deployment</h3>
+                        <ul>
+                            <li>Set up an automated deployment pipeline using GitHub Actions to update my resume on an AWS S3-
+                                hosted static website whenever changes are pushed to the GitHub repository</li>
+                            <li>Ensured seamless synchronization between GitHub and S3, providing instant updates to the live site with 
+                                every resume modification.</li>
+                        </ul>
+                    </div>
+                </a>
+            
+                <!-- Project 3 -->
+                <a href="https://github.com/Kaphleamrit/mavenMathUtils" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="project-item">
+                        <h3>Java CI/CD & Code Quality with SonarQube and Maven</h3>
+                        <ul>
+                            <li>The MathUtils Java library contains mathematical functionalities, with JUnit tests ensuring accuracy in 
+                                handling edge cases.
+                            </li>
+                            <li>Jenkins is configured for CI/CD, integrating SonarQube for static analysis and JaCoCo for code coverage, 
+                                streamlined notifications, and artifact generation are implemented to enhance code quality.</li>
+                        </ul>
+                    </div>
+                </a>
+            
+            </section>
+            
 
             <!-- Certifications Section -->
             <section id="certifications">

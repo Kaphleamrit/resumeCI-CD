@@ -1,10 +1,8 @@
 /* style.css */
 
 .header-info h1 {
-    font-size:  3.8rem;
+    font-size: 3.8rem;
 }
-
-
 
 body, html {
     margin: 0;
@@ -87,11 +85,34 @@ h2 {
     margin-bottom: 25px; /* Adjust space between education/project items */
 }
 
+/* Animation for project items */
+.project-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
+    padding: 15px;
+    background-color: #fff; /* Background for the project */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for project items */
+.project-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Elevate the shadow */
+}
+
+/* Animation for project titles */
 h3 {
     font-size: 1.4rem; /* Smaller subheading */
     margin-bottom: 5px;
     color: #0073b1; /* LinkedIn Blue for project titles */
     font-weight: 300; /* Light weight */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Change project title color on hover */
+.project-item:hover h3 {
+    color: #005f90; /* Darker blue on hover */
 }
 
 .project-item p {
