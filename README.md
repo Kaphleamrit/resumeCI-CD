@@ -1,5 +1,5 @@
 # Static Website Hosting on AWS S3 with GitHub Actions
-
+[Live Deployment](http://kaphley-resume-website.s3-website-us-east-1.amazonaws.com)
 This project demonstrates how to host a static website on Amazon S3 and automate deployment using GitHub Actions. Every time you push a new change to the `main` branch of your GitHub repository, the updated files are automatically deployed to your S3 bucket.
 
 ## Project Structure
